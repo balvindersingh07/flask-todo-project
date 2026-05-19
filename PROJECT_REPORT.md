@@ -52,6 +52,43 @@ A rebase conflict occurred in `todo.html`, then the workflow resumed with `git a
 - A non-trivial rebase conflict was resolved without discarding work.
 - Merge and push activity confirms the project history reached GitHub.
 
+## Assignment Checklist Coverage
+
+### Task 1: Repository setup, SSH clone, username branch workflow
+
+- Repository created and connected to GitHub.
+- SSH-based clone and host verification completed.
+- Username branch (`balvindersingh07`) and initial commit flow completed.
+
+### Task 2: `<your_name>_new` JSON update and merge behavior
+
+- Branch `balvindersingh07_new` created.
+- `/api` JSON source file (`data.json`) updated in this branch.
+- Changes were merged into `main` and pushed.
+- Merge-state screenshots are included in `screenshots/`.
+
+### Task 3: `master_1` + `master_2` feature split and merge
+
+- `master_1`: frontend To-Do form created in `todo.html`.
+- `master_2`: backend route `/submittodoitem` added in `app.py` to accept `itemName` and `itemDescription` and persist data to MongoDB.
+- Both branches were merged into `main`.
+
+### Task 4: Form enhancement commits, reset, and rebase
+
+- `master_1` includes separate commits for:
+  - Item ID
+  - Item UUID
+  - Item Hash
+- `main` reset flow using `git reset --soft` was performed and re-committed.
+- Rebase conflict in `todo.html` was handled and continued safely (`git add`, `git rebase --continue`).
+- Commit history preserves incremental change intent across steps.
+
+## GitHub Visibility Note
+
+Screenshots and detailed explanation appear in branches where they were committed (`master_1` and `main`), not in older branches like `balvindersingh07`.
+
+![GitHub branch view with recent pushes](screenshots/c__Users_lenovo_AppData_Roaming_Cursor_User_workspaceStorage_22ab599e5d3377adc0e25d098c2684f1_images_image-35540a1d-65e7-4eb5-9f95-6ebd4db1a1b1.png)
+
 ## Current Project Artifacts
 
 Core files present in the repository include:
